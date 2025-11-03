@@ -1,0 +1,33 @@
+ {% extends "base.html" %}
+ {% block title %}main content {% endblock %}/title>
+ {% block content %}
+    
+
+
+    <h1>
+        hello homepage main website
+        {% for x in content %}
+           
+               <p>{{x}}</p>
+        
+    {% endfor %}
+
+    </h1>
+    <h2>
+        the python code is below
+        {% for i in range(10) %}
+             {% if i %2 ==1 %}
+                  <p>{{i}}</p>
+
+                
+                {% endif %}
+        {% endfor %}
+        <p>welcome {{user}}</p>
+        <p>
+            the day he arrived {{date}}
+        </p>
+        {% endblock %}
+                
+                
+
+
